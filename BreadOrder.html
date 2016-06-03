@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href = "breadicon.png">
+		<title>Bread & Co.</title>
+	
+
+		<style type = "text/css">
+		@import url(https://fonts.googleapis.com/css?family=Merriweather);
+		@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+		body {
+			background-color: #ffeecc;
+			background-image: url("pattern.png");
+			background-repeat: repeat;
+			background-size: 16.67%;
+			/*background-position: 50% -110%;*/
+		}
+
+		#topmenu {
+			position: fixed;
+			left: 12.5%;
+			z-index: 1;
+			width: 75%;
+			min-height: 126px;
+			background-color: #EAB861;
+			margin: auto;
+			font-size: 40px;
+			font-color: black;
+			text-align: center;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #804d00;
+		}
+		
+		.menubutton {
+			width: 14.96%;
+			float: left;
+			height: 126px;
+			text-align: center;
+		    transition: all .3s ease-in;
+			background-color: #f0cc8f;
+			color: #b35900;
+			font-family: 'Merriweather', serif;
+			font-size: 35px;
+		}
+
+		.menubutton:hover {
+			background-color: #b35900;
+			color: #f0cc8f;
+		}
+
+		#title {
+			height: 90px;
+			width: 39.7%;
+			font-size: 62px;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #e69900;
+			background-color: #fff3e3;
+			padding-top: 30px;
+			margin: auto;
+			float: left;
+			line-height: 58px;
+		}
+
+		#homemenubutton {
+			line-height: 125px;
+		}
+
+		#processmenubutton {
+			line-height: 125px;
+		}
+
+		#ordermenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#menumenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#selectlocation {
+			position: absolute;
+			left: 13.5%;
+			top: 22.7%;
+			width: 20%;
+			min-height: 68.7%;
+			border-style: solid;
+			border-radius: 15px;
+			border-width: 4px;
+			border-color: #e6BB22;
+			background-color: #fff3e3;
+		}
+
+		#selectlocationmessage {
+			font-family: 'Slabo 27px', serif;
+			width: 100%;
+			min-height: 15%;
+			/*text-align: left;*/
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #e6BB22;
+			background-color: #fff3e3;
+			text-align: center;
+			padding-bottom: 20px;
+			line-height: 30px
+		}
+		#samplelocation {
+			font-family: 'Slabo 27px', serif;
+			width: 94%;
+			min-height: 100px;
+			margin: auto;
+			margin-top: -13px;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #b35900;
+		}
+
+		#selectlocationsampletitle {
+			font-family: 'Slabo 27px', serif;
+			font-size: 30px;
+			position: absolute;
+			top: 11.5%;
+			left: 6%;
+		}
+
+		#selectlocationsampleaddress {
+			font-family: 'Slabo 27px', serif;
+			position: absolute;
+			top: 13%;
+			left: 6px;
+			font-size: 17px;
+		}
+
+		#map {
+			width: 95%;
+			margin-left: 2.5%;
+			margin-top: 2.5%;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #b35900;
+		}
+
+		#embedmap {
+			position: absolute;
+			top: 22.7%;
+			left: 36.5%;
+			width: 50%;
+			min-height: 68.7%;
+			border-style: solid;
+			border-radius: 15px;
+			border-width: 4px;
+			border-color: #e6BB22;
+			background-color: #fff3e3;
+		}
+
+		</style>
+	</head>
+
+	<body>
+	<div id = "topmenu">
+		<a href = "index.html"><div id = "homemenubutton" class = "menubutton">Home</div></a>
+		<a href = "BreadProcess.html"><div id = "processmenubutton" class = "menubutton">Process</div></a>
+		<div id = "title">Bread Loavers</div>
+		<a href = "BreadOrder.html"><div id = "ordermenubutton" class = "menubutton">Order</div></a>
+		<a href = "BreadMenu.html"><div id = "menumenubutton" class = "menubutton">Menu</div></a>
+	</div>
+	
+	<div id = "selectlocation">
+		<h1 id = "selectlocationmessage">Select Location</h1>
+		<!-- <div id = "samplelocation">
+			<h1 id = "selectlocationsampletitle">Bellevue</h1>
+			<h1 id = "selectlocationsampleaddress">1100 Bellevue Way NE, Bellevue, WA 98004</h1>
+		</div> -->
+	</div>
+	<div id = "embedmap">
+		<iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10757.422058748565!2d-122.20879202525101!3d47.61922018366071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4698634c4fce446d!2sPanera+Bread!5e0!3m2!1sen!2sus!4v1464287975036" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+	</body>
+</html>

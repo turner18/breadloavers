@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href = "breadicon.png">
+		<title>Bread & Co.</title>
+	
+
+		<style type = "text/css">
+		@import url(https://fonts.googleapis.com/css?family=Merriweather);
+		
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		body {
+			background-color: #ffeecc;
+			background-image: url("pattern.png");
+			background-repeat: repeat;
+			background-size: 16.67%;
+			/*background-position: 50% -110%;*/
+		}
+
+		#topmenu {
+			position: fixed;
+			left: 12.5%;
+			z-index: 1;
+			width: 75%;
+			min-height: 126px;
+			background-color: #EAB861;
+			margin: auto;
+			font-size: 40px;
+			font-color: black;
+			text-align: center;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #804d00;
+		}
+		
+		.menubutton {
+			width: 14.96%;
+			float: left;
+			height: 126px;
+			text-align: center;
+		    transition: all .3s ease-in;
+			background-color: #f0cc8f;
+			color: #b35900;
+			font-family: 'Merriweather', serif;
+			font-size: 35px;
+		}
+
+		.menubutton:hover {
+			background-color: #b35900;
+			color: #f0cc8f;
+		}
+
+		#title {
+			height: 90px;
+			width: 39.7%;
+			font-size: 62px;
+			line-height: 58px;
+			text-align: center;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #e69900;
+			background-color: #fff3e3;
+			padding-top: 30px;
+			margin: auto;
+			float: left;
+		}
+
+		#homeslide {
+			position: absolute;
+			width: 60%;
+			left: 20%;
+			top: 31.75%;
+			border-style: solid;
+			border-width: 15px;
+			border-color: #b35900;
+		}
+
+		#showspecials {
+			font-family: 'Merriweather', serif;
+			position: absolute;
+			min-height: 165px;
+			border-style: solid;
+			border-color: #e6BB22;
+			border-width: 15px;
+			margin-left: 21.1%;
+			margin-top: 38%;
+			width: 27%;
+			line-height: 10px;
+			background-color: #fff3e3;
+			color: #b35900;
+			text-align: center;
+			font-size: 37px;
+			line-height: 155px;
+			transition: all .3s ease-in;
+			/*background-image: url("buttersmear.jpg");*/
+		}
+
+		#showspecials:hover {
+			background-color: #b35900;
+			color: #fff3e3;
+			/*background-image: url("buttersmeardark.jpg");*/
+		}
+
+		#ordernow {
+			font-family: 'Merriweather', serif;
+			position: absolute;
+			min-height: 165px;
+			border-style: solid;
+			border-color: #e6BB22;
+			border-width: 15px;
+			margin-left: 51.1%;
+			margin-top: 38%;
+			width: 27%;
+			line-height: 10px;
+			background-color: #fff3e3;
+			color: #b35900;
+			text-align: center;
+			font-size: 37px;
+			line-height: 155px;
+			transition: all .3s ease-in;
+			/*background-image: url("baguettecloseup.jpg");*/
+		}
+
+		#ordernow:hover {
+			background-color: #b35900;
+			color: #fff3e3;
+			/*background-image: url("buttersmeardark.jpg");*/
+		}
+
+		#homemenubutton {
+			line-height: 125px;
+		}
+
+		#processmenubutton {
+			line-height: 125px;
+		}
+
+		#ordermenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#menumenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#quote {
+			position: absolute;
+			left: 25%;
+			top: 18%;
+			width: 50%;
+			min-height: 11%;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #b35900;
+			border-radius: 15px;
+			background-color: #fff3e3;
+			font-size: 35px;
+			font-family: 'Merriweather', serif;
+			font-style: italic;
+			text-align: center;
+			line-height: 100px;
+		}
+
+		</style>
+	</head>
+
+	<body>
+	<div id = "topmenu">
+		<a href = "index.html"><div id = "homemenubutton" class = "menubutton">Home</div></a>
+		<a href = "BreadProcess.html"><div id = "processmenubutton" class = "menubutton">Process</div></a>
+		<div id = "title">Bread Loavers</div>
+		<a href = "BreadOrder.html"><div id = "ordermenubutton" class = "menubutton">Order</div></a>
+		<a href = "BreadMenu.html"><div id = "menumenubutton" class = "menubutton">Menu</div></a>
+	</div>
+	
+	<!--Home-->
+	<div id = "quote">Home of our world famous almond bread</div>
+	<img src = "breadtable.jpg" id = "homeslide">
+	<a href = "BreadMenu.html"><div id = "showspecials">Today's Specials</div></a>
+	<a href = "BreadOrder.html"><div id = "ordernow">Order Now</div></a>
+
+	<!--Timeline
+	<div id = "timelinephotos">
+		<div id = "wheat" class = "timephotos">
+			<img src = "wheat.jpg" width = "325px">
+			<p>Family-grown wheat</p>
+		</div>
+		<div id = "woodfire" class = "timephotos">
+			<img src = "woodfire.jpg" width = "325px">
+			<p>Baked in a wood fire oven</p>
+		</div>
+		<div id = "breadglaze" class = "timephotos">
+			<img src = "breadglaze.jpg" width = "325px">
+			<p>Covered in almond glaze</p>
+		</div>
+		<div id = "bakery" class = "timephotos">
+			<img src = "bakery.jpg" width = "325px">
+			<p>Shipped to our bakeries</p>
+		</div>
+	</div>
+	<div id = "timeline">
+		<div id = "centertime"></div>
+		<div id = "branchtime1" class = "branchtime"></div>
+		<div id = "branchtime2" class = "branchtime"></div>
+		<div id = "branchtime3" class = "branchtime"></div>
+		<div id = "branchtime4" class = "branchtime"></div>
+	</div> -->
+	</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href = "breadicon.png">
+		<title>Bread & Co.</title>
+	
+
+		<style type = "text/css">
+		@import url(https://fonts.googleapis.com/css?family=Merriweather);
+		@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+		body {
+			background-color: #ffeecc;
+			background-image: url("pattern.png");
+			background-repeat: repeat;
+			background-size: 16.67%;
+			/*background-position: 50% -110%;*/
+		}
+
+		img {
+			width: 96%;
+			margin: 2%;
+			margin-top: 3%;
+		}
+
+		h1 {
+			/*position: absolute;*/
+			font-family: 'Slabo 27px', serif;
+			font-style: none;
+			font-color: black;
+			font-size: 32px;
+			text-align: center;
+			margin: auto;
+			margin-top: 3%;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		#topmenu {
+			position: fixed;
+			left: 12.5%;
+			z-index: 1;
+			width: 75%;
+			min-height: 126px;
+			background-color: #EAB861;
+			margin: auto;
+			font-size: 40px;
+			font-color: black;
+			text-align: center;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #804d00;
+		}
+		
+		.menubutton {
+			width: 14.96%;
+			float: left;
+			height: 126px;
+			text-align: center;
+		    transition: all .3s ease-in;
+			background-color: #f0cc8f;
+			color: #b35900;
+			font-family: 'Merriweather', serif;
+			font-size: 35px;
+		}
+
+		.menubutton:hover {
+			background-color: #b35900;
+			color: #f0cc8f;
+		}
+
+		#title {
+			height: 90px;
+			width: 39.7%;
+			font-size: 62px;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #e69900;
+			background-color: #fff3e3;
+			padding-top: 30px;
+			margin: auto;
+			float: left;
+			line-height: 58px;
+		}
+		
+		#homemenubutton {
+			line-height: 125px;
+		}
+
+		#processmenubutton {
+			line-height: 125px;
+		}
+
+		#ordermenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#menumenubutton {
+			float: right;
+			line-height: 125px;
+		}
+
+		#specialsbutton {
+			left: 12.5%;
+			top: 22%;
+		}
+
+		#almondbutton {
+			left: 33%;
+			top: 22%;
+		}
+
+		#baguettebutton {
+			left: 53.5%;
+			top: 22%;
+		}
+
+		#sandwichbutton {
+			left: 12.5%;
+			top: 57%;
+		}
+
+		#breadbowlbutton {
+			left: 33%;
+			top: 57%;
+		}
+
+		#pastriesbutton {
+			left: 53.5%;
+			top: 57%;
+		}
+
+		.orderfoodbutton {
+			position: absolute;
+			width: 18%;
+			min-height: 30%;
+			border-style: solid;
+			border-width: 4px;
+			background-color: #fff3e3;
+			/*border-color: #b35900;*/
+			border-color: #e6BB22;
+			border-radius: 15px;
+		}
+
+		#currentorder {
+			left: 74%;
+			top: 22%;
+			width: 13.5%;
+			min-height: 48.3%;
+		}
+
+		#currentcart {
+			width: 100%;
+			text-align: center;
+			line-height: 50px;
+			font-family: 'Slabo 27px', serif;
+			font-style: none;
+			font-color: black;
+			font-size: 32px;
+			padding-bottom: 5px;
+			border: none;
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #e6BB22;
+		}
+
+		#currenttotal {
+			margin-top: 90%;
+			width: 100%;
+			text-align: center;
+			line-height: 50px;
+			font-family: 'Slabo 27px', serif;
+			font-style: none;
+			font-color: black;
+			font-size: 32px;
+			padding-top: 8px;
+			border: none;
+			border-top-style: solid;
+			border-top-width: 4px;
+			border-top-color: #e6BB22;
+		}
+
+		#checkout {
+			left: 74%;
+			top: 75.5%;
+			width: 13.5%;
+			min-height: 12%;
+			transition: all .3s ease-in;
+		}
+
+		#checkout:hover {
+			background-color: #b35900;
+			color: #fff3e3;
+		}
+
+		#checkouttitle {
+			text-decoration: none;
+			font-style: none;
+			font-color: black;
+			text-align: center;
+			margin: auto;
+			line-height: 110px;
+		}
+
+		#sampleitem {
+			width: 94%;
+			margin: auto;
+			margin-top: 4px;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #b35900;
+		}
+
+		#sampleitemphoto {
+			width: 35%;
+			margin-left: 3%;
+		}
+
+		#sampleitemdescrip {
+			font-family: 'Slabo 27px', serif;
+			font-size: 15px;
+			position: absolute;
+			font-style: bold;
+			left: 42%;
+			top: 16%;
+			width: 50%;
+			min-height: 80%;
+			margin-right: 3%;
+		}
+
+		#sampleitemcost {
+			font-family: 'Slabo 27px', serif;
+			font-size: 22px;
+			position: absolute;
+			font-style: bold;
+			left: 40%;
+			top: 22%;
+			width: 50%;
+			min-height: 80%;
+			margin-right: 3%;
+		}
+
+		</style>
+	</head>
+
+	<body>
+	<div id = "topmenu">
+		<a href = "index.html"><div id = "homemenubutton" class = "menubutton">Home</div></a>
+		<a href = "BreadProcess.html"><div id = "processmenubutton" class = "menubutton">Process</div></a>
+		<div id = "title">Bread Loavers</div>
+		<a href = "BreadOrder.html"><div id = "ordermenubutton" class = "menubutton">Order</div></a>
+		<a href = "BreadMenu.html"><div id = "menumenubutton" class = "menubutton">Menu</div></a>
+	</div>
+
+	<div>
+		<a href = "https://www.panerabread.com/en-us/menu-categories/bagels-and-spreads.html"><div id = "specialsbutton" class = "orderfoodbutton">
+			<h1>Today's Specials</h1>
+			<img src = "breadspecials.jpg">
+		</div></a>
+		<a href = "https://www.panerabread.com/en-us/menu-categories/pastries-and-sweets.html#pecan-braid"><div id = "almondbutton" class = "orderfoodbutton">
+			<h1>Almond Bread</h1>
+			<img src = "breadglaze.jpg">
+		</div></a>
+		<a href = "https://www.panerabread.com/en-us/menu-categories/freshly-baked-breads.html"><div id = "baguettebutton" class = "orderfoodbutton">
+			<h1>Baguettes</h1>
+			<img src = "baguette.jpg">
+		</div></a>
+		<a href = "https://www.panerabread.com/en-us/menu-categories/sandwiches-panini.html"><div id = "sandwichbutton" class = "orderfoodbutton">
+			<h1>Sandwiches</h1>
+			<img src = "turkeysandwich.jpeg">
+		</div></a>
+		<a href = "https://www.panerabread.com/en-us/featured-menu/todays-soup.html"><div id = "breadbowlbutton" class = "orderfoodbutton">
+			<h1>Soup Breadbowls</h1>
+			<img src = "breadbowl.jpg">
+		</div></a>
+		<a href = "https://www.panerabread.com/en-us/menu-categories/pastries-and-sweets.html"><div id = "pastriesbutton" class = "orderfoodbutton">
+			<h1>Pastries</h1>
+			<img src = "pastries.jpg">
+		</div></a>
+	</div>
+
+	<div>
+		<div id = "currentorder" class = "orderfoodbutton">
+			<h1 id = "currentcart">Cart</h1>
+			<div id = "sampleitem">
+				<img id = "sampleitemphoto" src = "baconbroccolisoup.jpg">
+				<h1 id = "sampleitemdescrip">Bacon broccoli soup</h1>
+				<h1 id = "sampleitemcost">$4.79</h1>
+			</div>
+			<h1 id = "currenttotal">Total: $4.79</h1>
+		</div>
+		<a href = "BreadOrder.html"><div id = "checkout" class = "orderfoodbutton">
+			<h1 id = "checkouttitle">Checkout</h1>
+		</div></a>
+	</div>
+
+	</body>
+</html>
